@@ -33,14 +33,14 @@ let oneRect = сxt.fillRect(x, y, widthRect, heightRect);
 сxt.fillRect(25, 25, 100, 100);
 сxt.clearRect(45, 45, 60, 60);
 сxt.strokeRect(50, 50, 50, 50);
-console.log(сxt);
+
 
 canvas.width = widthCanvas;
 canvas.height = heightCanvas;
 // canvas.style.border ='5px solid red';
 let c = canvas.getContext('2d');
 
-c.fillStyle = '#123456';
 
 
-console.log(c);
+
+
