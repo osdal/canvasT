@@ -1,7 +1,5 @@
-var canvas = document.createElement('canvas'),
-=======
 let canvas = document.createElement('canvas'),
->>>>>>> f9af8389a1fb85f9a02458731ba4149b01c6f685
+
 	body = document.querySelector('body'),
 	widthCanvas = 500,
 	heightCanvas = 300,
@@ -11,7 +9,6 @@ let canvas = document.createElement('canvas'),
 	y = 100;
 
 body.appendChild(canvas);
-<<<<<<< HEAD
 canvas.width = widthCanvas; // innerWidth
 canvas.height = heightCanvas;// innerHeight
 canvas.style.border = '10px solid black';
@@ -37,13 +34,13 @@ let oneRect = сxt.fillRect(x, y, widthRect, heightRect);
 сxt.clearRect(45, 45, 60, 60);
 сxt.strokeRect(50, 50, 50, 50);
 console.log(сxt);
-=======
+
 canvas.width = widthCanvas;
 canvas.height = heightCanvas;
 // canvas.style.border ='5px solid red';
 let c = canvas.getContext('2d');
 
 c.fillStyle = '#123456';
-let oneRect = c.fillRect(x, y, widthRect, heightRect);
+
 
 console.log(c);
