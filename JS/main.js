@@ -22,8 +22,9 @@ canvas.style.margin = '50px';
 
 
 let сxt = canvas.getContext('2d');
-
+console.log(x);
 сxt.fillStyle = '#123456';
+console.log(сxt)
 let oneRect = сxt.fillRect(x, y, widthRect, heightRect);
 
 сxt.fillRect(100, 100, 50, 100);
@@ -35,10 +36,9 @@ let oneRect = сxt.fillRect(x, y, widthRect, heightRect);
 сxt.strokeRect(50, 50, 50, 50);
 
 
-canvas.width = widthCanvas;
-canvas.height = heightCanvas;
+
 // canvas.style.border ='5px solid red';
-let c = canvas.getContext('2d');
+
 
 
 
