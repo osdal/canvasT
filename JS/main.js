@@ -5,39 +5,56 @@ let canvas = document.createElement('canvas'),
 	heightCanvas = 300,
 	widthRect = 55,
 	heightRect = 100,
-	x = 50,
-	y = 100;
+	x = 0,
+	y = 0;
 
 body.appendChild(canvas);
 canvas.width = widthCanvas; // innerWidth
 canvas.height = heightCanvas;// innerHeight
-canvas.style.border = '10px solid black';
+canvas.style.border = '3px solid black';
 canvas.style.borderTop = '';
-canvas.style.margin = '50px';
-
-
-// canvas.style.border ='5px solid red';
-	
-
+canvas.style.margin = '10px';
 
 
 let сxt = canvas.getContext('2d');
-console.log(x);
+
 сxt.fillStyle = '#123456';
-console.log(сxt)
-let oneRect = сxt.fillRect(x, y, widthRect, heightRect);
-
-сxt.fillRect(100, 100, 50, 100);
-сxt.strokeRect(400, 100, 50, 100);
-сxt.clearRect(100, 100, 50, 50);
-
-сxt.fillRect(25, 25, 100, 100);
-сxt.clearRect(45, 45, 60, 60);
-сxt.strokeRect(50, 50, 50, 50);
 
 
 
-// canvas.style.border ='5px solid red';
+/*setInterval(function () {
+	сxt.fillStyle = 'white';
+	сxt.fillRect(0, 0, widthCanvas, heightCanvas);
+
+	сxt.fillStyle = '#123456';
+	сxt.fillRect(x++, y, widthRect, heightRect)
+}, 10)*/
+
+/*сxt.strokeStyle = '#856954';
+сxt.lineWidth = 10;
+сxt.strokeRect(x + 50, y + 100, 120, 120);
+
+сxt.arc(widthCanvas / 2, heightCanvas / 2, 100, 0, Math.PI, true);
+сxt.fill();*/
+
+сxt.fillStyle = '#159874';
+сxt.scale(2, 1);
+сxt.rotate(20*Math.PI/180);
+
+сxt.beginPath();
+сxt.moveTo(50, 50);
+сxt.lineTo(25, 100);
+сxt.lineTo(75, 100);
+сxt.lineTo(50, 50);
+сxt.stroke();
+
+// сxt.fillRect(100, 100, 50, 100);
+// сxt.strokeRect(400, 100, 50, 100);
+// сxt.clearRect(100, 100, 50, 50);
+
+// сxt.fillRect(25, 25, 100, 100);
+// сxt.clearRect(45, 45, 60, 60);
+// сxt.strokeRect(50, 50, 50, 50);
 
 
 
