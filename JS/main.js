@@ -67,16 +67,21 @@ function dropDown () {
 	if (y == heightCanvas - heightRect) {
 		clearInterval(dropDown);
 	}
-	document.addEventListener('keydown', (event) => {
-	  var keyName = event.keyCode;
-	  if (keyName == 40) {
-		speedDropDown = 20;
-		}
-	});
+	
 	
 }
 
 var dropDown = setInterval (dropDown, speedDropDown);
+
+function speedUp() {
+	document.addEventListener('keydown', function (event) {
+	var keyName = event.keyCode;
+		  if (keyName == 40) {
+			this.speedDropDown = 20;
+		  }
+	})
+}
+speedUp();
 
 
 
