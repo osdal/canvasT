@@ -71,11 +71,15 @@ function dropDown () {
 	
 }
 
+
+
+
 var dropDown = setInterval (dropDown, speedDropDown);
 
 function speedUp() {
 	document.addEventListener('keydown', function (event) {
 	var keyName = event.keyCode;
+
 		  if (keyName == 40) {
 			this.speedDropDown = 20;
 		  }
@@ -83,7 +87,9 @@ function speedUp() {
 }
 speedUp();
 
-
+// function (moveRight) {
+// 	/* body... */
+// }
 
 
 
